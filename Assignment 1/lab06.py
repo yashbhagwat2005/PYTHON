@@ -20,14 +20,14 @@ for i in range(10):
 
 for i in range(10):
     for j in range(10):
-        if j != i:
+        if j != i:  
             under_root = ((points[j][0] - points[i][0]) ** 2 +
                           (points[j][1] - points[i][1]) ** 2 +
                           (points[j][2] - points[i][2]) ** 2)
-            distances.append((math.sqrt(under_root), j + 1))
+            distances.append((math.sqrt(under_root), j + 1)) 
     nearest_neighbor = min(distances, key=lambda x: x[0])
     nearest_neighbors_list.append(nearest_neighbor)
-    distances = []
+    distances = [] 
 
 print("The given 3d points:")
 for i in range(10):
